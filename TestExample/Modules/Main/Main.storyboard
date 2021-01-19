@@ -16,20 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rij-uq-jIH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rij-uq-jIH" customClass="CustomLabel" customModule="TestExample" customModuleProvider="target">
                                 <rect key="frame" x="188.5" y="437.5" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-a8-Pu9">
+                                <rect key="frame" x="180.5" y="508.5" width="53" height="30"/>
+                                <state key="normal" title="Catalog"/>
+                                <connections>
+                                    <action selector="catalogButtonClicked:" destination="7oE-YW-gBI" eventType="touchUpInside" id="w3d-AH-0gP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xYa-JD-tr9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rij-uq-jIH" firstAttribute="centerY" secondItem="5Y1-3U-seh" secondAttribute="centerY" id="6G7-tg-JxR"/>
                             <constraint firstItem="rij-uq-jIH" firstAttribute="centerX" secondItem="5Y1-3U-seh" secondAttribute="centerX" id="EDV-HA-9rG"/>
+                            <constraint firstItem="E9W-a8-Pu9" firstAttribute="top" secondItem="rij-uq-jIH" secondAttribute="bottom" constant="50" id="KTI-f3-Ce5"/>
+                            <constraint firstItem="E9W-a8-Pu9" firstAttribute="centerX" secondItem="5Y1-3U-seh" secondAttribute="centerX" id="Odh-fH-Ump"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catalogButton" destination="E9W-a8-Pu9" id="k9r-yY-Aod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Xs-Em-wGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" id="KGk-i7-Jjw" customClass="ProductCell" customModule="TestExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PU-DW-bUT" customClass="TitleBoldLabel" customModule="TestExample" customModuleProvider="target">
+                        <rect key="frame" x="132" y="16" width="227" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProductImage" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-fx-rko">
+                        <rect key="frame" x="16" y="16" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="C2j-UD-jMQ"/>
+                            <constraint firstAttribute="width" constant="100" id="LCK-Cg-moe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uH-N0-0nm" customClass="TextGrayRegularLabel" customModule="TestExample" customModuleProvider="target">
+                        <rect key="frame" x="132" y="52.5" width="227" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UWE-af-0jL">
+                        <rect key="frame" x="16" y="120" width="100" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="5x6-6H-c8b"/>
+                            <constraint firstAttribute="width" constant="100" id="a2Z-4d-bYg"/>
+                        </constraints>
+                        <segments>
+                            <segment title="First"/>
+                            <segment title="Second"/>
+                        </segments>
+                        <connections>
+                            <action selector="sizeControlSwitched:" destination="KGk-i7-Jjw" eventType="valueChanged" id="FPB-QL-5Ly"/>
+                        </connections>
+                    </segmentedControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIB-M9-PMg" customClass="TextBoldLabel" customModule="TestExample" customModuleProvider="target">
+                        <rect key="frame" x="132" y="124" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R3-BH-w43" customClass="AddButton" customModule="TestExample" customModuleProvider="target">
+                        <rect key="frame" x="327" y="120" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="R7Y-0q-vOX"/>
+                            <constraint firstAttribute="width" constant="32" id="hMG-Mj-aIS"/>
+                        </constraints>
+                        <state key="normal" image="plus" catalog="system"/>
+                        <connections>
+                            <action selector="addButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pl6-Sy-7V5"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8uH-N0-0nm" firstAttribute="leading" secondItem="c9W-fx-rko" secondAttribute="trailing" constant="16" id="6Su-jh-4y3"/>
+                    <constraint firstItem="UWE-af-0jL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8We-oO-eFh"/>
+                    <constraint firstItem="kIB-M9-PMg" firstAttribute="leading" secondItem="UWE-af-0jL" secondAttribute="trailing" constant="16" id="8iv-oC-DRT"/>
+                    <constraint firstItem="5PU-DW-bUT" firstAttribute="leading" secondItem="c9W-fx-rko" secondAttribute="trailing" constant="16" id="9tZ-7C-uZr"/>
+                    <constraint firstItem="5PU-DW-bUT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Fxm-tv-sof"/>
+                    <constraint firstItem="c9W-fx-rko" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="MAE-dN-gOd"/>
+                    <constraint firstAttribute="trailing" secondItem="2R3-BH-w43" secondAttribute="trailing" constant="16" id="SKn-aU-b2s"/>
+                    <constraint firstAttribute="bottom" secondItem="kIB-M9-PMg" secondAttribute="bottom" constant="23" id="ZC7-6d-lwS"/>
+                    <constraint firstAttribute="bottom" secondItem="2R3-BH-w43" secondAttribute="bottom" constant="16" id="fw6-9k-lIE"/>
+                    <constraint firstAttribute="trailing" secondItem="5PU-DW-bUT" secondAttribute="trailing" constant="16" id="ikt-r6-rFk"/>
+                    <constraint firstItem="c9W-fx-rko" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kxv-Qe-QkQ"/>
+                    <constraint firstItem="UWE-af-0jL" firstAttribute="top" secondItem="c9W-fx-rko" secondAttribute="bottom" constant="4" id="rl0-qu-PSK"/>
+                    <constraint firstAttribute="trailing" secondItem="8uH-N0-0nm" secondAttribute="trailing" constant="16" id="sOO-be-JgD"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UWE-af-0jL" secondAttribute="bottom" constant="16" id="vZw-sG-Y0l"/>
+                    <constraint firstItem="8uH-N0-0nm" firstAttribute="top" secondItem="5PU-DW-bUT" secondAttribute="bottom" constant="16" id="xQ4-iZ-328"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="2R3-BH-w43" id="nyx-qI-2Az"/>
+                <outlet property="descriptionLabel" destination="8uH-N0-0nm" id="VY1-6h-AGw"/>
+                <outlet property="priceLabel" destination="kIB-M9-PMg" id="iLU-yz-Gof"/>
+                <outlet property="productImageView" destination="c9W-fx-rko" id="IhI-zT-D3x"/>
+                <outlet property="sizeControl" destination="UWE-af-0jL" id="sbM-dU-j2i"/>
+                <outlet property="titleLabel" destination="5PU-DW-bUT" id="brZ-7v-7Yf"/>
+            </connections>
+            <point key="canvasLocation" x="25.362318840579711" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProductImage" width="100" height="77"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

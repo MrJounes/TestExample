@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CatalogView" customModule="TestExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fhV-bx-heA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ecb-oo-NsG"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dxo-FV-9UO">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-KO-nTz">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GNR-KO-nTz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4f0-lr-dBk"/>
+                <constraint firstItem="fhV-bx-heA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5QX-jQ-7ro"/>
+                <constraint firstItem="fhV-bx-heA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8O9-k6-pgt"/>
+                <constraint firstItem="GNR-KO-nTz" firstAttribute="top" secondItem="fhV-bx-heA" secondAttribute="bottom" id="BEj-cP-fwc"/>
+                <constraint firstItem="GNR-KO-nTz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ley-3f-Fjg"/>
+                <constraint firstItem="GNR-KO-nTz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ngz-eq-v6M"/>
+                <constraint firstItem="fhV-bx-heA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="P7P-cX-oSH"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="fhV-bx-heA" id="XV9-yR-SKa"/>
+                <outlet property="tableView" destination="GNR-KO-nTz" id="ZoN-bA-BTw"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="84.107946026986511"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -25,7 +25,8 @@ final class MainViewController: UIViewController {
     var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
     
     // MARK: - Internal vars
-
+    @IBOutlet weak var catalogButton: UIButton!
+    
     // MARK: - Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -44,6 +45,9 @@ final class MainViewController: UIViewController {
     }
     
     // MARK: - IBActions
+    @IBAction func catalogButtonClicked(_ sender: UIButton) {
+        router?.routeToCatalog()
+    }
 }
 
 // MARK: - Display logic

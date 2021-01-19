@@ -27,10 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
 
     func setupRootViewController() {
-        guard let splashVC = R.storyboard.main.mainViewController() else {
+        guard let vc = R.storyboard.catalog.catalogViewController() else {
             return
         }
-        let navigation = UINavigationController(rootViewController: splashVC)
+        let navigation = UINavigationController(rootViewController: vc)
         navigation.isNavigationBarHidden = true
         navigation.navigationBar.tintColor = .black
         let window = UIWindow(frame: UIScreen.main.bounds)

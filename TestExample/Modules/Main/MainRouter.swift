@@ -13,7 +13,7 @@
 import UIKit
 
 @objc protocol MainRoutingLogic {
-    
+    func routeToCatalog()
 }
 
 protocol MainDataPassing {
@@ -30,6 +30,12 @@ final class MainRouter: NSObject {
 // MARK: - Routing logic
 extension MainRouter: MainRoutingLogic {
     
+    func routeToCatalog() {
+        guard let catalogVC = R.storyboard.catalog.catalogViewController() else {
+            return
+        }
+        viewController?.navigationController?.pushViewController(catalogVC, animated: true)
+    }
 }
 
 // MARK: - Data passing

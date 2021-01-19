@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuantityStepperView" customModule="TestExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-9S-SJn" customClass="StepperButton" customModule="TestExample" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="QeN-OC-GDS"/>
+                        <constraint firstAttribute="width" constant="32" id="oz3-gf-gD4"/>
+                    </constraints>
+                    <state key="normal" image="minus" catalog="system"/>
+                    <connections>
+                        <action selector="minusButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="TQk-7B-4fU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQn-OY-Cev" customClass="StepperButton" customModule="TestExample" customModuleProvider="target">
+                    <rect key="frame" x="82" y="0.0" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="RkF-is-VSb"/>
+                        <constraint firstAttribute="height" constant="32" id="fEQ-4f-EcK"/>
+                    </constraints>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <connections>
+                        <action selector="plusButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="chh-cm-Ssa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-0P-WXU" customClass="TextRegularLabel" customModule="TestExample" customModuleProvider="target">
+                    <rect key="frame" x="32" y="0.0" width="50" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="9uH-cl-Txt"/>
+                        <constraint firstAttribute="height" constant="32" id="doX-Rs-mMZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="K7a-9S-SJn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3u1-he-n3q"/>
+                <constraint firstItem="NQn-OY-Cev" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4d2-lu-zAQ"/>
+                <constraint firstAttribute="trailing" secondItem="NQn-OY-Cev" secondAttribute="trailing" id="Ajd-MF-H6d"/>
+                <constraint firstItem="K7a-9S-SJn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PsM-JS-8uS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jg4-0P-WXU" secondAttribute="bottom" id="YLq-Xw-xMc"/>
+                <constraint firstItem="NQn-OY-Cev" firstAttribute="leading" secondItem="Jg4-0P-WXU" secondAttribute="trailing" id="lW0-z5-a7i"/>
+                <constraint firstItem="Jg4-0P-WXU" firstAttribute="leading" secondItem="K7a-9S-SJn" secondAttribute="trailing" id="mWc-nf-gIu"/>
+                <constraint firstItem="Jg4-0P-WXU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sVz-x4-Gd1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabel" destination="Jg4-0P-WXU" id="Hda-pi-yV9"/>
+                <outlet property="minusButton" destination="K7a-9S-SJn" id="tiz-ZG-rCa"/>
+                <outlet property="plusButton" destination="NQn-OY-Cev" id="H2v-hf-OCm"/>
+            </connections>
+            <point key="canvasLocation" x="-5.7971014492753632" y="-196.20535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
