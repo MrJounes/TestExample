@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (5.4.1)
+  - GoogleMaps (4.1.0):
+    - GoogleMaps/Maps (= 4.1.0)
+  - GoogleMaps/Base (4.1.0)
+  - GoogleMaps/Maps (4.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.1.0):
+    - GoogleMaps/Base (= 4.1.0)
+  - Kingfisher (6.0.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - PanModal (1.2.7)
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Realm (10.5.0):
+    - Realm/Headers (= 10.5.0)
+  - Realm/Headers (10.5.0)
+  - RealmSwift (10.5.0):
+    - Realm (= 10.5.0)
+  - UBottomSheet (1.0.9)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher
+  - Moya
+  - PanModal
+  - R.swift
+  - RealmSwift
+  - UBottomSheet
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+    - Moya
+    - PanModal
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - UBottomSheet
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
+  GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
+  Kingfisher: 13f6e68c928eb50439b5cb2ea75d6035018438ea
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Realm: e1c22c3d83b229afb70ebc10e1771c91e9542d12
+  RealmSwift: 6fc078d9d3fd7e58c71bfdbb694e252462f112a5
+  UBottomSheet: a1c528d907b60e7ec65e1f0987fe6074b2ad3762
+
+PODFILE CHECKSUM: 91160b0d54a699443428e0ec8c73c2a52cf25970
+
+COCOAPODS: 1.10.0
