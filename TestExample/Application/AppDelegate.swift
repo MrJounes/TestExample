@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
 
     func setupRootViewController() {
-        guard let vc = R.storyboard.catalog.catalogViewController() else {
+        guard let vc = R.storyboard.tabBar.tabBarViewController() else {
             return
         }
         let navigation = UINavigationController(rootViewController: vc)

@@ -8,7 +8,8 @@
 import UIKit
 
 protocol CatalogViewDelegate: class {
-    func productDidSelect(_ id: String)
+    func productDidSelect(_ model: CatalogViewModel.ProductModel)
+    func passingProduct(data: CatalogViewModel.ProductModel?)
 }
 
 class CatalogView: UIView {
@@ -115,10 +116,22 @@ extension CatalogView: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.setupCell(with: products[indexPath.row])
+        cell.delegate = self
         return cell
     }
+}
+
+extension CatalogView: ProductCellDelegate {
     
+    func passingProduct(data: CatalogViewModel.ProductModel?) {
+        delegate?.passingProduct(data: data)
+    }
     
+    func setCell(stepper: GMStepper) {
+//        let value = stepper.value
+//        let index = tableView.indexPath(for: <#T##UITableViewCell#>)
+//        UserDefaults.standard.setValue(value, forKey: <#T##String#>)
+    }
 }
 
 // MARK: - TableView Delegate
@@ -126,7 +139,9 @@ extension CatalogView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath.row)
+        //print(indexPath.row)
+        let model = products[indexPath.row]
+        delegate?.productDidSelect(model)
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

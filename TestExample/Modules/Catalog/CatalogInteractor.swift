@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol CatalogBusinessLogic {
     func prepareCatalog()
@@ -31,6 +32,7 @@ final class CatalogInteractor {
     // MARK: - Internal vars
     private var categories: [String] = []
     private var products: [CatalogViewModel.ProductModel] = []
+    private let realmInstance = RealmService.shared
 }
 
 // MARK: - Business logic
@@ -40,6 +42,7 @@ extension CatalogInteractor: CatalogBusinessLogic {
         let data = fetchData()
         self.categories = data.categories
         self.products = data.products
+        writeToRealm(categories: categories, products: products)
         updateCatalog()
     }
     
@@ -57,6 +60,38 @@ extension CatalogInteractor: CatalogDataStore {
 // MARK: - Private methods
 private extension CatalogInteractor {
     
+    func writeToRealm(categories: [String], products: [CatalogViewModel.ProductModel]) {
+        
+        realmInstance.deleteAll()
+        
+        let categoriesList = List<String>()
+        let _ = categories.map { (category) in
+            categoriesList.append(category)
+        }
+        
+        let produtcList = List<ProductRealmModel>()
+        
+        let productArray = products.map { (product) -> ProductRealmModel in
+            
+            let item = ProductRealmModel(productId: product.productId,
+                                         title: product.title,
+                                         descrip: product.description,
+                                         price: product.price,
+                                         imageUrl: product.imageUrl,
+                                         quantity: product.quantity,
+                                         weight: product.weight,
+                                         categories: product.categories,
+                                         categoriesId: product.categoriesId)
+            return item
+        }
+        let _ = productArray.map { (product) in
+            produtcList.append(product)
+        }
+        
+        let realmModel = CatalogRealmModel(categories: categoriesList, products: produtcList)
+        realmInstance.create(realmModel)
+    }
+    
     func fetchData() -> CatalogViewModel{
         let categories = ["Роллы", "Суши", "Сеты", "Вок", "Салаты", "Соусы", "Закуски", "Напитки"]
         let products = [
@@ -65,7 +100,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "130 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "235 г",
                                       sizePrice: [CatalogViewModel.SizePrice(size: "5 шт", price: "130 ₽"), CatalogViewModel.SizePrice(size: "10 шт", price: "260 ₽")],
                                       categories: "Роллы",
@@ -75,7 +110,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "150 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "250 г",
                                       sizePrice: [CatalogViewModel.SizePrice(size: "5 шт", price: "150 ₽"), CatalogViewModel.SizePrice(size: "10 шт", price: "300 ₽")],
                                       categories: "Роллы",
@@ -85,7 +120,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "80 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "150 г",
                                       sizePrice: nil,
                                       categories: "Суши",
@@ -95,7 +130,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "580 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "1150 г",
                                       sizePrice: nil,
                                       categories: "Сеты",
@@ -105,7 +140,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "180 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "350 г",
                                       sizePrice: nil,
                                       categories: "Вок",
@@ -115,7 +150,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "110 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "250 г",
                                       sizePrice: nil,
                                       categories: "Салаты",
@@ -125,7 +160,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "30 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "50 г",
                                       sizePrice: nil,
                                       categories: "Соусы",
@@ -135,7 +170,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "90 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "100 г",
                                       sizePrice: nil,
                                       categories: "Закуски",
@@ -145,7 +180,7 @@ private extension CatalogInteractor {
                                       description: "description",
                                       price: "100 ₽",
                                       imageUrl: "",
-                                      quantity: "1",
+                                      quantity: 0,
                                       weight: "500 г",
                                       sizePrice: nil,
                                       categories: "Напитки",

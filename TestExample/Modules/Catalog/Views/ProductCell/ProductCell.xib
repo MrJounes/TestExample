@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -66,6 +67,17 @@
                             <action selector="addButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pl6-Sy-7V5"/>
                         </connections>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IL-jN-WdQ" customClass="GMStepper" customModule="TestExample" customModuleProvider="target">
+                        <rect key="frame" x="245" y="120" width="114" height="32"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="114" id="Wqa-UH-A0y"/>
+                            <constraint firstAttribute="height" constant="32" id="YIe-fB-lzu"/>
+                        </constraints>
+                        <connections>
+                            <action selector="stepperClicked:" destination="KGk-i7-Jjw" eventType="valueChanged" id="0CR-pM-okr"/>
+                        </connections>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8uH-N0-0nm" firstAttribute="leading" secondItem="c9W-fx-rko" secondAttribute="trailing" constant="16" id="6Su-jh-4y3"/>
@@ -74,8 +86,10 @@
                     <constraint firstItem="5PU-DW-bUT" firstAttribute="leading" secondItem="c9W-fx-rko" secondAttribute="trailing" constant="16" id="9tZ-7C-uZr"/>
                     <constraint firstItem="5PU-DW-bUT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Fxm-tv-sof"/>
                     <constraint firstItem="c9W-fx-rko" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="MAE-dN-gOd"/>
+                    <constraint firstAttribute="trailing" secondItem="4IL-jN-WdQ" secondAttribute="trailing" constant="16" id="On0-7a-hYa"/>
                     <constraint firstAttribute="trailing" secondItem="2R3-BH-w43" secondAttribute="trailing" constant="16" id="SKn-aU-b2s"/>
                     <constraint firstAttribute="bottom" secondItem="kIB-M9-PMg" secondAttribute="bottom" constant="23" id="ZC7-6d-lwS"/>
+                    <constraint firstAttribute="bottom" secondItem="4IL-jN-WdQ" secondAttribute="bottom" constant="16" id="cdD-rf-jsG"/>
                     <constraint firstAttribute="bottom" secondItem="2R3-BH-w43" secondAttribute="bottom" constant="16" id="fw6-9k-lIE"/>
                     <constraint firstAttribute="trailing" secondItem="5PU-DW-bUT" secondAttribute="trailing" constant="16" id="ikt-r6-rFk"/>
                     <constraint firstItem="c9W-fx-rko" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kxv-Qe-QkQ"/>
@@ -92,6 +106,7 @@
                 <outlet property="priceLabel" destination="kIB-M9-PMg" id="iLU-yz-Gof"/>
                 <outlet property="productImageView" destination="c9W-fx-rko" id="IhI-zT-D3x"/>
                 <outlet property="sizeControl" destination="UWE-af-0jL" id="sbM-dU-j2i"/>
+                <outlet property="stepper" destination="4IL-jN-WdQ" id="ml7-FI-enJ"/>
                 <outlet property="titleLabel" destination="5PU-DW-bUT" id="brZ-7v-7Yf"/>
             </connections>
             <point key="canvasLocation" x="25.362318840579711" y="89.732142857142847"/>
@@ -100,5 +115,8 @@
     <resources>
         <image name="ProductImage" width="100" height="77"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

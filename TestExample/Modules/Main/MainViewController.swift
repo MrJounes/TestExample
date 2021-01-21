@@ -19,6 +19,7 @@ protocol MainDisplayLogic: class {
 final class MainViewController: UIViewController {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var stepper: GMStepper!
     
     // MARK: - External vars
     var interactor: MainBusinessLogic?
@@ -59,6 +60,22 @@ extension MainViewController: MainDisplayLogic {
 private extension MainViewController {
     
     func setupView() {
+        setupStepper()
+    }
+    
+    func setupStepper() {
+        stepper.minimumValue = 0
+        stepper.value = 0
         
+        stepper.cornerRadius = 8
+        
+        stepper.limitHitAnimationColor = R.color.companyUnenableColor()!
+        stepper.labelSlideLength = 0
+        
+        stepper.buttonsBackgroundColor = R.color.companyColor()!
+        
+        stepper.labelBackgroundColor = R.color.whiteColor()!
+        stepper.labelTextColor = R.color.blackColor()!
+        stepper.labelFont = R.font.montserratRegular(size: 14)!
     }
 }

@@ -29,23 +29,34 @@
                                     <action selector="catalogButtonClicked:" destination="7oE-YW-gBI" eventType="touchUpInside" id="w3d-AH-0gP"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAq-aR-GCc" customClass="GMStepper" customModule="TestExample" customModuleProvider="target">
+                                <rect key="frame" x="150" y="355.5" width="114" height="32"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1S7-Jf-93l"/>
+                                    <constraint firstAttribute="width" constant="114" id="GeH-xg-ONC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xYa-JD-tr9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rij-uq-jIH" firstAttribute="centerY" secondItem="5Y1-3U-seh" secondAttribute="centerY" id="6G7-tg-JxR"/>
+                            <constraint firstItem="FAq-aR-GCc" firstAttribute="centerX" secondItem="5Y1-3U-seh" secondAttribute="centerX" id="DRP-01-dde"/>
                             <constraint firstItem="rij-uq-jIH" firstAttribute="centerX" secondItem="5Y1-3U-seh" secondAttribute="centerX" id="EDV-HA-9rG"/>
                             <constraint firstItem="E9W-a8-Pu9" firstAttribute="top" secondItem="rij-uq-jIH" secondAttribute="bottom" constant="50" id="KTI-f3-Ce5"/>
                             <constraint firstItem="E9W-a8-Pu9" firstAttribute="centerX" secondItem="5Y1-3U-seh" secondAttribute="centerX" id="Odh-fH-Ump"/>
+                            <constraint firstItem="rij-uq-jIH" firstAttribute="top" secondItem="FAq-aR-GCc" secondAttribute="bottom" constant="50" id="dVD-gR-EhE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="catalogButton" destination="E9W-a8-Pu9" id="k9r-yY-Aod"/>
+                        <outlet property="stepper" destination="FAq-aR-GCc" id="Wlm-Mu-vhr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Xs-Em-wGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="63"/>
+            <point key="canvasLocation" x="237.68115942028987" y="62.946428571428569"/>
         </scene>
     </scenes>
     <resources>

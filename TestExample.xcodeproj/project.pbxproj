@@ -24,11 +24,38 @@
 		D74B65DA25B6FA2C00DB2EB9 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B65D225B6FA2C00DB2EB9 /* MainConfigurator.swift */; };
 		D74B65E325B6FAEB00DB2EB9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74B65E225B6FAEB00DB2EB9 /* Colors.xcassets */; };
 		D74B65FA25B6FD4B00DB2EB9 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B65F925B6FD4B00DB2EB9 /* CustomLabel.swift */; };
+		D75CB29725B844B8005FB28C /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB29625B844B8005FB28C /* GMStepper.swift */; };
+		D75CB29A25B84B2C005FB28C /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB29925B84B2C005FB28C /* CustomStepper.swift */; };
+		D75CB2C225B861B0005FB28C /* ProdutBottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75CB2BA25B861B0005FB28C /* ProdutBottomSheet.storyboard */; };
+		D75CB2C325B861B0005FB28C /* ProdutBottomSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2BB25B861B0005FB28C /* ProdutBottomSheetPresenter.swift */; };
+		D75CB2C425B861B0005FB28C /* ProdutBottomSheetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2BC25B861B0005FB28C /* ProdutBottomSheetWorker.swift */; };
+		D75CB2C525B861B0005FB28C /* ProdutBottomSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2BD25B861B0005FB28C /* ProdutBottomSheetRouter.swift */; };
+		D75CB2C725B861B0005FB28C /* ProdutBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2BF25B861B0005FB28C /* ProdutBottomSheetViewController.swift */; };
+		D75CB2C825B861B0005FB28C /* ProdutBottomSheetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2C025B861B0005FB28C /* ProdutBottomSheetInteractor.swift */; };
+		D75CB2C925B861B0005FB28C /* ProdutBottomSheetConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2C125B861B0005FB28C /* ProdutBottomSheetConfigurator.swift */; };
+		D75CB2D925B876EE005FB28C /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75CB2D125B876EE005FB28C /* Card.storyboard */; };
+		D75CB2DA25B876EE005FB28C /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D225B876EE005FB28C /* CardPresenter.swift */; };
+		D75CB2DB25B876EE005FB28C /* CardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D325B876EE005FB28C /* CardWorker.swift */; };
+		D75CB2DC25B876EE005FB28C /* CardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D425B876EE005FB28C /* CardRouter.swift */; };
+		D75CB2DE25B876EE005FB28C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D625B876EE005FB28C /* CardViewController.swift */; };
+		D75CB2DF25B876EE005FB28C /* CardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D725B876EE005FB28C /* CardInteractor.swift */; };
+		D75CB2E025B876EE005FB28C /* CardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2D825B876EE005FB28C /* CardConfigurator.swift */; };
+		D75CB2EC25B87822005FB28C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75CB2E425B87822005FB28C /* TabBar.storyboard */; };
+		D75CB2ED25B87822005FB28C /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2E525B87822005FB28C /* TabBarPresenter.swift */; };
+		D75CB2EE25B87822005FB28C /* TabBarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2E625B87822005FB28C /* TabBarWorker.swift */; };
+		D75CB2EF25B87822005FB28C /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2E725B87822005FB28C /* TabBarRouter.swift */; };
+		D75CB2F125B87822005FB28C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2E925B87822005FB28C /* TabBarViewController.swift */; };
+		D75CB2F225B87822005FB28C /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2EA25B87822005FB28C /* TabBarInteractor.swift */; };
+		D75CB2F325B87822005FB28C /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2EB25B87822005FB28C /* TabBarConfigurator.swift */; };
+		D75CB2FB25B879F3005FB28C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB2F925B879F3005FB28C /* CardCell.swift */; };
+		D75CB2FC25B879F3005FB28C /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75CB2FA25B879F3005FB28C /* CardCell.xib */; };
+		D75CB30225B87C8F005FB28C /* CardProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB30125B87C8F005FB28C /* CardProductModel.swift */; };
+		D75CB30525B94F3F005FB28C /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB30425B94F3F005FB28C /* RealmService.swift */; };
+		D75CB30925B94F88005FB28C /* CatalogRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75CB30825B94F88005FB28C /* CatalogRealmModel.swift */; };
 		D76F239E25B703BE0061772C /* Catalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76F239625B703BE0061772C /* Catalog.storyboard */; };
 		D76F239F25B703BE0061772C /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239725B703BE0061772C /* CatalogPresenter.swift */; };
 		D76F23A025B703BE0061772C /* CatalogWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239825B703BE0061772C /* CatalogWorker.swift */; };
 		D76F23A125B703BE0061772C /* CatalogRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239925B703BE0061772C /* CatalogRouter.swift */; };
-		D76F23A225B703BE0061772C /* CatalogModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239A25B703BE0061772C /* CatalogModels.swift */; };
 		D76F23A325B703BE0061772C /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239B25B703BE0061772C /* CatalogViewController.swift */; };
 		D76F23A425B703BE0061772C /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239C25B703BE0061772C /* CatalogInteractor.swift */; };
 		D76F23A525B703BE0061772C /* CatalogConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F239D25B703BE0061772C /* CatalogConfigurator.swift */; };
@@ -76,11 +103,38 @@
 		D74B65D225B6FA2C00DB2EB9 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		D74B65E225B6FAEB00DB2EB9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D74B65F925B6FD4B00DB2EB9 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		D75CB29625B844B8005FB28C /* GMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
+		D75CB29925B84B2C005FB28C /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		D75CB2BA25B861B0005FB28C /* ProdutBottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProdutBottomSheet.storyboard; sourceTree = "<group>"; };
+		D75CB2BB25B861B0005FB28C /* ProdutBottomSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetPresenter.swift; sourceTree = "<group>"; };
+		D75CB2BC25B861B0005FB28C /* ProdutBottomSheetWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetWorker.swift; sourceTree = "<group>"; };
+		D75CB2BD25B861B0005FB28C /* ProdutBottomSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetRouter.swift; sourceTree = "<group>"; };
+		D75CB2BF25B861B0005FB28C /* ProdutBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetViewController.swift; sourceTree = "<group>"; };
+		D75CB2C025B861B0005FB28C /* ProdutBottomSheetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetInteractor.swift; sourceTree = "<group>"; };
+		D75CB2C125B861B0005FB28C /* ProdutBottomSheetConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutBottomSheetConfigurator.swift; sourceTree = "<group>"; };
+		D75CB2D125B876EE005FB28C /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		D75CB2D225B876EE005FB28C /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
+		D75CB2D325B876EE005FB28C /* CardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWorker.swift; sourceTree = "<group>"; };
+		D75CB2D425B876EE005FB28C /* CardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRouter.swift; sourceTree = "<group>"; };
+		D75CB2D625B876EE005FB28C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		D75CB2D725B876EE005FB28C /* CardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInteractor.swift; sourceTree = "<group>"; };
+		D75CB2D825B876EE005FB28C /* CardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfigurator.swift; sourceTree = "<group>"; };
+		D75CB2E425B87822005FB28C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		D75CB2E525B87822005FB28C /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		D75CB2E625B87822005FB28C /* TabBarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWorker.swift; sourceTree = "<group>"; };
+		D75CB2E725B87822005FB28C /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		D75CB2E925B87822005FB28C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D75CB2EA25B87822005FB28C /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		D75CB2EB25B87822005FB28C /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		D75CB2F925B879F3005FB28C /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		D75CB2FA25B879F3005FB28C /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		D75CB30125B87C8F005FB28C /* CardProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProductModel.swift; sourceTree = "<group>"; };
+		D75CB30425B94F3F005FB28C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		D75CB30825B94F88005FB28C /* CatalogRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRealmModel.swift; sourceTree = "<group>"; };
 		D76F239625B703BE0061772C /* Catalog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Catalog.storyboard; sourceTree = "<group>"; };
 		D76F239725B703BE0061772C /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
 		D76F239825B703BE0061772C /* CatalogWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogWorker.swift; sourceTree = "<group>"; };
 		D76F239925B703BE0061772C /* CatalogRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRouter.swift; sourceTree = "<group>"; };
-		D76F239A25B703BE0061772C /* CatalogModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogModels.swift; sourceTree = "<group>"; };
 		D76F239B25B703BE0061772C /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		D76F239C25B703BE0061772C /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
 		D76F239D25B703BE0061772C /* CatalogConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogConfigurator.swift; sourceTree = "<group>"; };
@@ -193,8 +247,11 @@
 		D74B65C925B6FA1B00DB2EB9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D75CB2F525B87827005FB28C /* TabBar */,
 				D74B65CA25B6FA2000DB2EB9 /* Main */,
 				D76F23A725B703C20061772C /* Catalog */,
+				D75CB2CB25B861B4005FB28C /* ProdutBottomSheet */,
+				D75CB2D025B876D8005FB28C /* Card */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -234,6 +291,8 @@
 		D74B65DF25B6FA8F00DB2EB9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				D75CB30725B94F6B005FB28C /* Models */,
+				D75CB30425B94F3F005FB28C /* RealmService.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -270,6 +329,7 @@
 			children = (
 				D78DA9BB25B73D2600EAF6BE /* Label */,
 				D78DA9BC25B73D3500EAF6BE /* Button */,
+				D75CB29625B844B8005FB28C /* GMStepper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -289,6 +349,75 @@
 			path = DataStore;
 			sourceTree = "<group>";
 		};
+		D75CB2CB25B861B4005FB28C /* ProdutBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB2BA25B861B0005FB28C /* ProdutBottomSheet.storyboard */,
+				D75CB2BF25B861B0005FB28C /* ProdutBottomSheetViewController.swift */,
+				D75CB2C025B861B0005FB28C /* ProdutBottomSheetInteractor.swift */,
+				D75CB2BB25B861B0005FB28C /* ProdutBottomSheetPresenter.swift */,
+				D75CB2BC25B861B0005FB28C /* ProdutBottomSheetWorker.swift */,
+				D75CB2BD25B861B0005FB28C /* ProdutBottomSheetRouter.swift */,
+				D75CB2C125B861B0005FB28C /* ProdutBottomSheetConfigurator.swift */,
+			);
+			path = ProdutBottomSheet;
+			sourceTree = "<group>";
+		};
+		D75CB2D025B876D8005FB28C /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB30025B87C78005FB28C /* Models */,
+				D75CB2F825B879D3005FB28C /* CardCell */,
+				D75CB2D125B876EE005FB28C /* Card.storyboard */,
+				D75CB2D625B876EE005FB28C /* CardViewController.swift */,
+				D75CB2D725B876EE005FB28C /* CardInteractor.swift */,
+				D75CB2D225B876EE005FB28C /* CardPresenter.swift */,
+				D75CB2D325B876EE005FB28C /* CardWorker.swift */,
+				D75CB2D425B876EE005FB28C /* CardRouter.swift */,
+				D75CB2D825B876EE005FB28C /* CardConfigurator.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		D75CB2F525B87827005FB28C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB2E425B87822005FB28C /* TabBar.storyboard */,
+				D75CB2E925B87822005FB28C /* TabBarViewController.swift */,
+				D75CB2EA25B87822005FB28C /* TabBarInteractor.swift */,
+				D75CB2E525B87822005FB28C /* TabBarPresenter.swift */,
+				D75CB2E625B87822005FB28C /* TabBarWorker.swift */,
+				D75CB2E725B87822005FB28C /* TabBarRouter.swift */,
+				D75CB2EB25B87822005FB28C /* TabBarConfigurator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D75CB2F825B879D3005FB28C /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB2F925B879F3005FB28C /* CardCell.swift */,
+				D75CB2FA25B879F3005FB28C /* CardCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		D75CB30025B87C78005FB28C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB30125B87C8F005FB28C /* CardProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D75CB30725B94F6B005FB28C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D75CB30825B94F88005FB28C /* CatalogRealmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D76F23A725B703C20061772C /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +429,6 @@
 				D76F239725B703BE0061772C /* CatalogPresenter.swift */,
 				D76F239825B703BE0061772C /* CatalogWorker.swift */,
 				D76F239925B703BE0061772C /* CatalogRouter.swift */,
-				D76F239A25B703BE0061772C /* CatalogModels.swift */,
 				D76F239D25B703BE0061772C /* CatalogConfigurator.swift */,
 			);
 			path = Catalog;
@@ -371,6 +499,7 @@
 				D78DA9BE25B73D4300EAF6BE /* AddButton.swift */,
 				D78DA9C125B73D9B00EAF6BE /* CompanyBrandButton.swift */,
 				D78DA9AD25B7310700EAF6BE /* StepperButton.swift */,
+				D75CB29925B84B2C005FB28C /* CustomStepper.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -453,11 +582,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75CB2D925B876EE005FB28C /* Card.storyboard in Resources */,
 				D76F23DB25B715260061772C /* ProductCell.xib in Resources */,
+				D75CB2C225B861B0005FB28C /* ProdutBottomSheet.storyboard in Resources */,
 				D76F23D225B70B7A0061772C /* Montserrat-Regular.ttf in Resources */,
 				D76F23D025B70B7A0061772C /* Montserrat-Light.ttf in Resources */,
 				D76F23B425B705870061772C /* CatalogView.xib in Resources */,
 				D76F23BA25B707760061772C /* CategoryCell.xib in Resources */,
+				D75CB2FC25B879F3005FB28C /* CardCell.xib in Resources */,
 				D74B65D325B6FA2C00DB2EB9 /* Main.storyboard in Resources */,
 				D76F239E25B703BE0061772C /* Catalog.storyboard in Resources */,
 				D72DA8B925B72D8100C1D6F8 /* QuantityStepperView.xib in Resources */,
@@ -466,6 +598,7 @@
 				D76F23C925B70B6E0061772C /* Montserrat-SemiBold.ttf in Resources */,
 				D76F23CF25B70B7A0061772C /* Montserrat-Medium.ttf in Resources */,
 				D76F23D125B70B7A0061772C /* Montserrat-Bold.ttf in Resources */,
+				D75CB2EC25B87822005FB28C /* TabBar.storyboard in Resources */,
 				D74B65B725B6F9B100DB2EB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,36 +689,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78DA9B925B73B8700EAF6BE /* TextBoldLabel.swift in Sources */,
+				D75CB30225B87C8F005FB28C /* CardProductModel.swift in Sources */,
+				D75CB29725B844B8005FB28C /* GMStepper.swift in Sources */,
 				D76F23A325B703BE0061772C /* CatalogViewController.swift in Sources */,
 				D74B65AE25B6F9B100DB2EB9 /* AppDelegate.swift in Sources */,
-				D76F23A225B703BE0061772C /* CatalogModels.swift in Sources */,
+				D75CB2C525B861B0005FB28C /* ProdutBottomSheetRouter.swift in Sources */,
 				D74B65FA25B6FD4B00DB2EB9 /* CustomLabel.swift in Sources */,
 				D76F23BD25B708910061772C /* TextRegularLabel.swift in Sources */,
 				D76F23A525B703BE0061772C /* CatalogConfigurator.swift in Sources */,
+				D75CB29A25B84B2C005FB28C /* CustomStepper.swift in Sources */,
 				D72DA8A625B71F0F00C1D6F8 /* UIView.swift in Sources */,
+				D75CB2F325B87822005FB28C /* TabBarConfigurator.swift in Sources */,
 				D74B65DA25B6FA2C00DB2EB9 /* MainConfigurator.swift in Sources */,
 				D76F23C625B70B080061772C /* R.generated.swift in Sources */,
 				D78DA9BF25B73D4300EAF6BE /* AddButton.swift in Sources */,
+				D75CB2DE25B876EE005FB28C /* CardViewController.swift in Sources */,
 				D74B65D625B6FA2C00DB2EB9 /* MainRouter.swift in Sources */,
+				D75CB30925B94F88005FB28C /* CatalogRealmModel.swift in Sources */,
+				D75CB2E025B876EE005FB28C /* CardConfigurator.swift in Sources */,
+				D75CB2EF25B87822005FB28C /* TabBarRouter.swift in Sources */,
 				D74B65D725B6FA2C00DB2EB9 /* MainModels.swift in Sources */,
 				D74B65D825B6FA2C00DB2EB9 /* MainViewController.swift in Sources */,
 				D76F23A425B703BE0061772C /* CatalogInteractor.swift in Sources */,
+				D75CB2C425B861B0005FB28C /* ProdutBottomSheetWorker.swift in Sources */,
 				D76F23DA25B715260061772C /* ProductCell.swift in Sources */,
+				D75CB2FB25B879F3005FB28C /* CardCell.swift in Sources */,
 				D76F23B925B707760061772C /* CategoryCell.swift in Sources */,
 				D78DA9C725B7403F00EAF6BE /* CatalogViewModel.swift in Sources */,
+				D75CB2C325B861B0005FB28C /* ProdutBottomSheetPresenter.swift in Sources */,
+				D75CB30525B94F3F005FB28C /* RealmService.swift in Sources */,
+				D75CB2DA25B876EE005FB28C /* CardPresenter.swift in Sources */,
+				D75CB2F225B87822005FB28C /* TabBarInteractor.swift in Sources */,
 				D76F23B025B7057C0061772C /* CatalogView.swift in Sources */,
 				D78DA9AE25B7310700EAF6BE /* StepperButton.swift in Sources */,
 				D74B65D525B6FA2C00DB2EB9 /* MainWorker.swift in Sources */,
+				D75CB2C825B861B0005FB28C /* ProdutBottomSheetInteractor.swift in Sources */,
 				D78DA9C225B73D9B00EAF6BE /* CompanyBrandButton.swift in Sources */,
 				D74B65D925B6FA2C00DB2EB9 /* MainInteractor.swift in Sources */,
+				D75CB2DC25B876EE005FB28C /* CardRouter.swift in Sources */,
+				D75CB2DF25B876EE005FB28C /* CardInteractor.swift in Sources */,
+				D75CB2C925B861B0005FB28C /* ProdutBottomSheetConfigurator.swift in Sources */,
 				D78DA9B225B739B100EAF6BE /* TitleBoldLabel.swift in Sources */,
+				D75CB2ED25B87822005FB28C /* TabBarPresenter.swift in Sources */,
 				D76F239F25B703BE0061772C /* CatalogPresenter.swift in Sources */,
 				D72DA8B625B72D4F00C1D6F8 /* QuantityStepperView.swift in Sources */,
 				D78DA9CB25B7496F00EAF6BE /* CatalogPresenterResponse.swift in Sources */,
+				D75CB2EE25B87822005FB28C /* TabBarWorker.swift in Sources */,
 				D74B65D425B6FA2C00DB2EB9 /* MainPresenter.swift in Sources */,
+				D75CB2C725B861B0005FB28C /* ProdutBottomSheetViewController.swift in Sources */,
 				D76F23A125B703BE0061772C /* CatalogRouter.swift in Sources */,
 				D78DA9B625B73A8500EAF6BE /* TextGrayRegularLabel.swift in Sources */,
+				D75CB2F125B87822005FB28C /* TabBarViewController.swift in Sources */,
 				D76F23A025B703BE0061772C /* CatalogWorker.swift in Sources */,
+				D75CB2DB25B876EE005FB28C /* CardWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ struct CatalogViewModel {
         let description: String
         let price: String
         let imageUrl: String
-        let quantity: String
+        let quantity: Int
         let weight: String
         let sizePrice: [SizePrice]?
         let categories: String

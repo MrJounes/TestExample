@@ -56,6 +56,7 @@ final class CatalogViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         interactor?.updateCatalog()
+        catalogView.update()
     }
     
     // MARK: - IBActions
@@ -79,8 +80,16 @@ extension CatalogViewController: CatalogDisplayLogic {
 // MARK: - CatalogView Delegate
 extension CatalogViewController: CatalogViewDelegate {
     
-    func productDidSelect(_ id: String) {
-        
+    func passingProduct(data: CatalogViewModel.ProductModel?) {
+        guard let productId = data?.productId, let data = data else {
+            return
+        }
+        print(productId)
+        router?.passingProduct(data)
+    }
+    
+    func productDidSelect(_ model: CatalogViewModel.ProductModel) {
+        router?.routeToProductBottomSheet(model)
     }
 }
 
@@ -90,6 +99,15 @@ private extension CatalogViewController {
     func setupView() {
         interactor?.prepareCatalog()
         setupSubViews()
+        resetDefaults()
+    }
+    
+    func resetDefaults() {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
     }
     
     func setupSubViews() {

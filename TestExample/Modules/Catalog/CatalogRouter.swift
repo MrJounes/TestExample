@@ -11,9 +11,11 @@
 //
 
 import UIKit
+import PanModal
 
-@objc protocol CatalogRoutingLogic {
-    
+protocol CatalogRoutingLogic {
+    func routeToProductBottomSheet(_ model: CatalogViewModel.ProductModel)
+    func passingProduct(_ product: CatalogViewModel.ProductModel)
 }
 
 protocol CatalogDataPassing {
@@ -30,6 +32,21 @@ final class CatalogRouter: NSObject {
 // MARK: - Routing logic
 extension CatalogRouter: CatalogRoutingLogic {
     
+    func routeToProductBottomSheet(_ model: CatalogViewModel.ProductModel) {
+        guard let vc = R.storyboard.produtBottomSheet.produtBottomSheetViewController() else {
+            return
+        }
+        vc.router?.dataStore?.product = model
+        viewController?.presentPanModal(vc)
+    }
+    
+    func passingProduct(_ product: CatalogViewModel.ProductModel) {
+        guard let vc = R.storyboard.card.cardViewController() else {
+            return
+        }
+        vc.router?.dataStore?.products.append(product)
+        
+    }
 }
 
 // MARK: - Data passing
